@@ -31,3 +31,7 @@ def get_entrega(nombre: str):
         return database_entregas[nombre]
     else:
         return None
+
+def update_entrega(ent_in_db: EntInDB):
+    database_entregas[ent_in_db.objetivo] = ent_in_db
+    return ent_in_db
