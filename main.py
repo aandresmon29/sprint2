@@ -8,6 +8,9 @@ import datetime
 from fastapi import FastAPI
 from fastapi import HTTPException
 from routers.entregas_router import router as router_entregas
+from routers.tareas_router import router as router_tareas
+from routers.deadline_router import router as router_deadline
+
 
 api = FastAPI()
 
@@ -23,3 +26,5 @@ api.add_middleware(
 )
 
 api.include_router(router_entregas)
+api.include_router(router_tareas)
+api.include_router(router_deadline)

@@ -26,3 +26,7 @@ def get_tarea(nombre: str):
         return database_tareas[nombre]
     else:
         return None
+
+def update_tarea(task_in_db: TaskInDB):
+    database_tareas[task_in_db.objetivo] = task_in_db
+    return task_in_db
