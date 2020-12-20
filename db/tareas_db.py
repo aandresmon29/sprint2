@@ -30,3 +30,7 @@ def get_tarea(nombre: str):
 def update_tarea(task_in_db: TaskInDB):
     database_tareas[task_in_db.objetivo] = task_in_db
     return task_in_db
+
+def delete_tarea(nombre: str):
+    database_tareas.__delitem__(nombre)
+    return "Tarea Eliminada"

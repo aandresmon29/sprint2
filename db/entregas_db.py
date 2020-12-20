@@ -35,3 +35,7 @@ def get_entrega(nombre: str):
 def update_entrega(ent_in_db: EntInDB):
     database_entregas[ent_in_db.objetivo] = ent_in_db
     return ent_in_db
+
+def delete_entrega(nombre: str):
+    database_entregas.__delitem__(nombre)
+    return "Entrega Eliminada"

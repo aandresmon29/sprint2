@@ -23,3 +23,7 @@ def get_deadline(nombre: str):
 def update_deadline(deadl_in_db: DlInDB):
     database_deadline[deadl_in_db.objetivo] = deadl_in_db
     return deadl_in_db
+
+def delete_deadline(nombre: str):
+    database_deadline.__delitem__(nombre)
+    return "Deadline Eliminada"
