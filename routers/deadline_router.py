@@ -13,7 +13,7 @@ async def get_ldeadline(nombre: str):
     dl_out = (DlOut(**dl_in_db.dict()))
     return dl_out
 
-@router.put("/deadline/actualizar/")
+@router.put("/deadline/actualizar")
 async def put_ltareas(Dl_ent: DlIn):
     dl_in_db = get_deadline(Dl_ent.objetivo)
     if dl_in_db == None:

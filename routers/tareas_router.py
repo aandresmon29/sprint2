@@ -13,7 +13,7 @@ async def get_ltareas(nombre: str):
     task_out = (TaskOut(**task_in_db.dict()))
     return task_out
 
-@router.put("/tareas/actualizar/")
+@router.put("/tareas/actualizar")
 async def put_ltareas(Task_ent: TaskIn):
     task_in_db = get_tarea(Task_ent.objetivo)
     if task_in_db == None:

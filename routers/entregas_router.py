@@ -13,7 +13,7 @@ async def get_lentregas(nombre: str):
     ent_out = (EntOut(**ent_in_db.dict()))
     return ent_out
 
-@router.put("/entregas/actualizar/")
+@router.put("/entregas/actualizar")
 async def put_lentregas(Ent_ent: EntIn):
     ent_in_db = get_entrega(Ent_ent.objetivo)
     if ent_in_db == None:
