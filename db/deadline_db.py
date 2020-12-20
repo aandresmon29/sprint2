@@ -8,9 +8,9 @@ class DlInDB(BaseModel):
 database_deadline= Dict[str , DlInDB]
 
 database_deadline={
-   "Objetivo1" : DlInDB(**{"deadline" : 2020-12-12
+   "Objetivo1" : DlInDB(**{"deadline" : "2020-12-12"
                         }),
-   "Objetivo2" : DlInDB(**{"deadline" : 2020-12-13
+   "Objetivo2" : DlInDB(**{"deadline" : "2020-12-13"
                         }),
 }
 

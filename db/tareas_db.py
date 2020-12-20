@@ -14,11 +14,11 @@ database_tareas={
    "Objetivo1" : TaskInDB(**{"nombre" : "tarea1",
                         "urgencia" : "alta",
                         "importancia" : "media",
-                        "deadline" : 2020-12-11}),
+                        "deadline" : "2020-12-11"}),
    "Objetivo2" : TaskInDB(**{"nombre" : "tarea2",
                         "urgencia" : "media",
                         "importancia" : "alta",
-                        "deadline" : 2020-12-12}),
+                        "deadline" : "2020-12-12"}),
 }
 
 def get_tarea(nombre: str):

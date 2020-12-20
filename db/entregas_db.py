@@ -15,13 +15,13 @@ database_entregas={
    "Objetivo1" : EntInDB(**{"nombre" : "entregable1",
                             "responsable" : "persona1",
                             "descripcion" : "Entrega para sprint #2",
-                            "fecha" : 2020-12-9,
+                            "fecha" : "2020-12-11",
                             "version" : 1
                         }),
    "Objetivo2" : EntInDB(**{"nombre" : "entregable2",
                             "responsable" : "persona2",
                             "descripcion" : "Entrega final para sprint #2",
-                            "fecha" : 2020-12-9,
+                            "fecha" : "2020-12-10",
                             "version" : 1
                         }),
 }
